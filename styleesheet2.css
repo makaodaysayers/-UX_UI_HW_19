@@ -1,0 +1,226 @@
+body {
+    background-image: url("midgar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    font-size: 100%
+  }
+  .navigation {
+      border:aqua black;
+      background-color: #5F7A78;
+      text-align: center;
+      box-shadow: 10px 10px;
+      height: max-content;
+    }
+  .inline-block {
+        display: inline-block;
+        vertical-align: top;
+        border: 1px inset black;
+        background-color: lightgray;
+        text-align: center;
+        padding: 1%;
+        width: 300px;
+    }
+    .inline-block-text {
+      display: inline-block;
+      vertical-align: left;
+      border: 1px inset black;
+      background-color: lightgray;
+      text-align: left;
+      padding: 1%;
+      width: 300px;
+    }
+    .about-block {
+      display: block;
+      border: 1px outset black;
+      background-color: lightgray;
+      margin: auto;
+      text-align: center;
+      padding: 1%;
+  }
+    .inline-block-logo {
+      display: inline-block;
+      vertical-align: center;
+      border: 1px inset black;
+      background-color: lightgray;
+      text-align: center;
+      padding: 1%;
+  }
+  .logo {
+        width: 23%;
+        padding-top: 1%;
+        padding-right: 4%;
+        padding-bottom: 1%;
+        padding-left: 4%;
+        text-align: center;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    
+    li a:hover {
+      background-color: black(187, 22, 22);
+    }
+    Active
+  
+    li a:hover {
+      background-color: black(116, 0, 0);
+      color: white;
+    }
+  .heroimgimg {
+      height: 600px;
+      padding: 25px;
+      text-align: center;
+    }
+  .content {
+      width: 500px;
+      margin: 0 auto;
+    }
+  .footer {
+      display:block;
+      background-color: seashell;
+    }
+  .click-me {
+      width: 100px;
+      height: 50px;
+      margin: 0 auto;
+      box-shadow: 5px 10px;
+    }
+    link {
+        display: none;
+    }
+  
+    .content {
+     display: flex;
+      background-color: #5F7A78;
+      width: 320px;
+      padding: 10px;
+      border: 5px solid rgb(0, 0, 0);
+      margin: 0
+    
+    }
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+    }
+    p.solid {
+      border-style: solid;
+      border-width: 5px;
+    }
+    .box{
+        padding: 20px;
+        margin: 20px;
+        float: left;
+        border: 10px solid black;
+        flex-direction: row;
+    }
+    .my_UX_Skills {
+        /*display: flex;
+        height: fit-content;
+        text-align:left;
+        vertical-align: text-bottom;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;*/
+        margin: 16px;
+        padding: 10px;
+        background-color: #5F7A78;
+    }
+  
+   
+  .block_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 2px solid red;
+  }
+  .block_row_title {
+    margin-right: 24px;
+    margin-top: 150px;
+    margin-left: -24px;
+    padding: 8px;
+    background-color: #5F7A78;
+    border: 1px solid yellow;
+  }
+
+  .block_row_item {
+    margin: 24px;
+    border: 1px solid blue;
+  }
+
+  .skills_img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+  @media screen and (max-width: 900px) {
+    .block_row {
+      flex-direction: column;
+    }
+  }
+
+.test {
+  font-size: large;
+  font-style: italic;
+  color: aliceblue;
+  text-align: center;
+}
+.p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 40px;
+  color: white;
+}
+
+h2 {
+  font-size: 30px;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  color: white;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 5px;
+  text-align: right;
+  text-decoration: right;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #ee55c8;
+  color: white;
+}
+.fa-tumblr {
+  background: #195583;
+  color: white;
+}

@@ -1,49 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html> lang="en">
  <head>
-    <link rel="stylesheet" href="stylesheet2.css">
+     <meta charset="utf-8">
+   
+     <title>Makao Day Sayers  UX Portfolio</title>
+    <link rel="stylesheet" href="styleesheet2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+   <style>
+   p{
+       color: white;
+       margin: 5px;
+       cursor: pointer;
+       border-radius: blue;
+   }
+   p:hover {
+background: red;
+
+   }
+  
+   ul {
+    margin-left: 20px;
+    color: red;
+  }
+  li {
+    cursor: default;
+  }
+  li.active {
+    background: black;
+    color: white;
+  }
+  span {
+    color:red;
+  }
+  footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(139, 139, 139);
+  color: white;
+}
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="index.js"></script>
+   </style>
 </head>
 <body>
 
-<header class="navigation">
-    <div class="inline-block">
+<nav class="navbar navbar-expand-md navbar-light stickky-top">
+    <div class="container-block">
         <div class="inline-block-logo">
             <img src="logo.jpg" width="160" length="200"/>
         </div>
         <h2 class="inline-block">Makao Day Sayers</h2>
-            <p>UX/UI Designer,</p>
+            <p>UX/UI Designer,</p> 
             <p>Photographer,</p>
             <p>illustrator,</p>
-            <p>and Digital Nomad</p>
+            <p>and Digital Nomad</p><script>
+$( "p" ).click(function() {
+  $( this ).slideUp();
+});
+</script>
       </div>
     <nav class="about-block">
-        <li>About</li>
-        <li>Skills</li>
-        <li>Work</li>
-        <li>Contact</li>
+        <ul>
+            <li><a href="default.asp">Home</a></li>
+            <li>homepage</li>
+            <li><a href="work.asp">work</a></li>
+            <li>photography,illustration,music </li>
+            <li><a href="contact.asp">Contact</a></li>
+            <li>day.makao@gmai.com</li>
+            <li><a href="about.asp">About</a></li>
+            <li>I am a professional designer who is eager to explore my passions for reposive UX. Most of my freetime is playing throughthe final fantasty series and explore new arts.</li>
+          </ul>
+     <script>
+            $( "li" ).hover(
+              function() {
+                $( this ).append( $( "<span> ***</span>" ) );
+              }, function() {
+                $( this ).find( "span" ).last().remove();
+              }
+            );
+             
+            $( "li.fade" ).hover(function() {
+              $( this ).fadeOut( 100 );
+              $( this ).fadeIn( 500 );
+            });
+            </script>
     </nav>      
 </header>
 <section class="heroimg">
     <div class="content">
         <img src= "me.JPG" width="200" height="250"/>
-        <p>If you would like more information you can find my resume here</p>
+        <p class="inline-block"> If you would like more information you can find my resume here</p>
         <button class="click-me">Download Resume</button>
     </div>
 </section>
-<!--my ux skills section coded using css flex-->
 <section class="my_UX_Skills"> 
    <h2 class="my_UX_Skills"></h1>My Ux Skills</h2>
    <div class="flex container">
     <div class="block_row">
       <div>
     <img class="content" src="user reseach.png" width="300" height="250"/>
-        <h1 class="box">User Research focuses on understanding user behaviors, needs, and motivations through observation techniques, task analysis, and other feedback methodologies.</h1>
+        <h3 class="box">User Research focuses on understanding user behaviors, needs, and motivations through observation techniques, task analysis, and other feedback methodologies.</h3>
         <p> I often find as a desginer starting my procress with understanding my users view user reseach approach. I find its easiest to know the user by thinking like the user.</p>
         </div>
        <div>
         <img class="content" src="user_design_process.jpg" width="300" height="150"/>
-        <h2 class="box">The user experience is how as a desginer we can best improve the experience of a product,systems or service from a UX/Ui approach making utility,ease of use and efficent as possible. </h2>
+        <h3 class="box">The user experience is how as a desginer we can best improve the experience of a product,systems or service from a UX/Ui approach making utility,ease of use and efficent as possible. </h3>
         <p>At this point of the process I find myself going back to my resaech and implmenting what ive learned into the design fully.</p>
     </div>
       <div>
@@ -57,39 +120,64 @@
 
 <section class="my_work"> 
     <h1>my work</h1>
-        <div class="gridc-container">
+        <div class="grid-container">
             <button class="button">click-me</button>
-            <img class="content" src="GNC.png" width="300" height="250"/>
-            <h4>The Good Neighbor Center</h4>
+            <img class="content" src="GNC.png" width="1000" height="200"/>
+            <h2>The Good Neighbor Center</h2>
             <p>a non-profit tutoring and mentoring program dedicated to the proposition that knowledge is power. We work to empower young people through education and mentoring to prepare them for success in life.
             </p>
           
         </div>
         <div>
             <button class="button">click-me</button>
-            <img class="content" src="travel.png" width="200" height="250"/>
-            <h4>TravelHelpi let us help you</h4>
+            <img class="content" src="travel.png" width="100" height="500"/>
+            <h2>TravelHelpi let us help you</h2>
             <p>TravelHelpi is a travel commpanion app making traveling a easier experience.</p>
-            <img class="content" src="earth_netic.jpg" width="200" height="250"/>
+            <img class="content" src="earth_netic.jpg" width="100" height="500"/>
            
          </div>  
          <div>
             <button class="button">click-me</button>
-            <h4>EarthNetic</h4>
+            <h2>EarthNetic</h2 >
             <p>How you can get involved in the communties around you to better are ecosystem.</p>
             <h2>view all projects</h2>
             
         </div>
   </div>
 </section>
-<footer>
-    <ul class="about-block">
-        <li>About</li>
-        <li>Skills</li>
-        <li>Work</li>
-        <li>Contact</li>
-    </ul>
+  </style>
+  </head>
+  <body>
+  
+  <footer>
+    <p>Designer:Makao Day Sayers<br>
+    <a href="day.makao@gmail.com">Day.Makao@gmail.com</a></p>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-tumblr"></a>
+    <script>
+        $( "li" )
+          .odd()
+            .hide()
+          .end()
+          .even()
+            .hover(function() {
+              $( this )
+                .toggleClass( "active" )
+                .next()
+                  .stop( true, true )
+                  .slideToggle();
+            });
+        </script>
 </footer>
 
+<section>
+<div class="test" id="target">
+    <p>Social Media</p>
+  </div>
+  <div class="test" id="other">
+    <p>Sitemap</p>
+  </div>
+</section>
 </body>
 </html>
